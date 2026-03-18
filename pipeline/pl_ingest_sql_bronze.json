@@ -119,7 +119,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"folder_name": {
-											"value": "@concat(item().source_type,'/',item().table_name)",
+											"value": "@concat(item().source_schema,'/',item().table_name)",
 											"type": "Expression"
 										},
 										"table_name": {
