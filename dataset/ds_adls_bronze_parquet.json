@@ -9,7 +9,7 @@
 			"folder_name": {
 				"type": "string"
 			},
-			"table_name": {
+			"file_name": {
 				"type": "string"
 			}
 		},
