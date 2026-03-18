@@ -119,7 +119,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"folder_name": {
-											"value": "@concat(item().source_schema,'/',item().table_name)",
+											"value": "@concat(\n  item().source_schema,\n  '/',\n  item().table_name,\n  '/load_date=',\n  formatDateTime(utcNow(),'yyyy-MM-dd')\n)",
 											"type": "Expression"
 										},
 										"table_name": {
