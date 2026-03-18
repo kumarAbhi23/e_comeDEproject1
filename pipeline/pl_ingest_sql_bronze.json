@@ -220,6 +220,10 @@
 													"table_name": {
 														"value": "@item().table_name",
 														"type": "Expression"
+													},
+													"source_schema": {
+														"value": "@item().source_schema",
+														"type": "Expression"
 													}
 												}
 											},
