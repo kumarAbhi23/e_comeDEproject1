@@ -22,10 +22,6 @@
 					"value": "@dataset().table_name",
 					"type": "Expression"
 				},
-				"folderPath": {
-					"value": "@dataset().folder_name",
-					"type": "Expression"
-				},
 				"fileSystem": {
 					"value": "bronze",
 					"type": "Expression"
