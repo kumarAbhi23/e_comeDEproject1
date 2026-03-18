@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-dataengineering-lab"
+		},
+		"ls_dl_destination_accountKey": {
+			"value": ""
+		},
+		"ls_sql_source_password": {
+			"value": ""
+		},
+		"ls_dl_destination_properties_typeProperties_url": {
+			"value": "https://datalakeabhishek01.dfs.core.windows.net/"
+		},
+		"ls_sql_source_properties_typeProperties_server": {
+			"value": "sqlserver-abhishek-de.database.windows.net"
+		},
+		"ls_sql_source_properties_typeProperties_database": {
+			"value": "ecom"
+		},
+		"ls_sql_source_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
