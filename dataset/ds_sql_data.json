@@ -1,5 +1,5 @@
 {
-	"name": "ds_sql_cntrl_metadat",
+	"name": "ds_sql_data",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_sql_source",
@@ -7,10 +7,6 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
-		"typeProperties": {
-			"schema": "dbo",
-			"table": "ingestion_metadata"
-		}
+		"schema": []
 	}
 }
