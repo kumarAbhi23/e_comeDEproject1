@@ -1,0 +1,9 @@
+{
+	"name": "adf-dataengineering-lab",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "77fc3b68-fa57-4a66-ac6f-4533a4290e72",
+		"tenantId": "f665eef6-b3f6-41c5-b28c-0d6223780b2e"
+	}
+}
