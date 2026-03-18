@@ -121,7 +121,8 @@
 										"folder_name": {
 											"value": "@concat(\n  item().source_schema,\n  '/',\n  item().table_name,\n  '/load_date=',\n  formatDateTime(utcNow(),'yyyy-MM-dd')\n)",
 											"type": "Expression"
-										}
+										},
+										"file_name": "@item().table_name"
 									}
 								}
 							]
@@ -129,6 +130,8 @@
 						{
 							"name": "If Condition1",
 							"type": "IfCondition",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "copy_data_to_bronze",
