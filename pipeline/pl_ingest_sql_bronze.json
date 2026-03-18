@@ -169,7 +169,7 @@
 												},
 												"new_watermark_value": {
 													"value": {
-														"value": "@coalesce(\n     activity('lookup_max_watermark').output.firstRow.max_watermark,\n    activity('sp_get_last_watermark').output.firstRow.last_watermark_value\n)",
+														"value": "@coalesce(\n     activity('lookup_max_watermark').output.firstRow.max_watermark,\n    activity('lkp_last_watermark').output.firstRow.last_watermark_value\n)",
 														"type": "Expression"
 													},
 													"type": "Datetime"
