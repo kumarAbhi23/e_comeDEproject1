@@ -102,11 +102,11 @@
 									"referenceName": "ds_sql_data",
 									"type": "DatasetReference",
 									"parameters": {
-										"table_name": {
+										"folder_name": {
 											"value": "@item().table_name",
 											"type": "Expression"
 										},
-										"source_schema": {
+										"file_name": {
 											"value": "@item().source_schema",
 											"type": "Expression"
 										}
@@ -213,11 +213,11 @@
 												"referenceName": "ds_sql_data",
 												"type": "DatasetReference",
 												"parameters": {
-													"table_name": {
+													"folder_name": {
 														"value": "@item().table_name",
 														"type": "Expression"
 													},
-													"source_schema": {
+													"file_name": {
 														"value": "@item().source_schema",
 														"type": "Expression"
 													}
@@ -261,11 +261,11 @@
 									"referenceName": "ds_sql_data",
 									"type": "DatasetReference",
 									"parameters": {
-										"table_name": {
+										"folder_name": {
 											"value": "@item().table_name",
 											"type": "Expression"
 										},
-										"source_schema": {
+										"file_name": {
 											"value": "@item().source_schema",
 											"type": "Expression"
 										}
