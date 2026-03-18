@@ -121,10 +121,6 @@
 										"folder_name": {
 											"value": "@concat(\n  item().source_schema,\n  '/',\n  item().table_name,\n  '/load_date=',\n  formatDateTime(utcNow(),'yyyy-MM-dd')\n)",
 											"type": "Expression"
-										},
-										"table_name": {
-											"value": "@concat(\nitem().table_name,\n'/load_date=',\nformatDateTime(utcNow(),'yyyy-MM-dd')\n)",
-											"type": "Expression"
 										}
 									}
 								}
