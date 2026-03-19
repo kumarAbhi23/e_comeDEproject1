@@ -275,7 +275,8 @@
 											"type": "Expression"
 										}
 									}
-								}
+								},
+								"firstRowOnly": false
 							}
 						}
 					]
