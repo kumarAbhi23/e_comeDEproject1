@@ -73,7 +73,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "@if(\n  equals(toLower(item().watermark_type),'datetime'),\n\n  concat(\n    'SELECT * FROM ',\n    item().source_schema,'.',item().table_name,\n    ' WHERE ',item().watermark_column,\n    ' > ''',\n    activity('lkp_last_watermark').output.firstRow.last_watermark_value,\n    ''''\n  ),\n\n  concat(\n    'SELECT * FROM ',\n    item().source_schema,'.',item().table_name,\n    ' WHERE ',item().watermark_column,\n    ' > ',\n    activity('lkp_last_watermark').output.firstRow.last_watermark_value\n  )\n)",
+										"value": "@if(\n  equals(toLower(item().watermark_type),'datetime'),\n\n  concat(\n    'SELECT * FROM ',\n    item().source_schema,'.',item().table_name,\n    ' WHERE ',item().watermark_column,\n    ' > ''',\n    string(activity('lkp_last_watermark').output.firstRow.last_watermark_value),\n    ''''\n  ),\n\n  concat(\n    'SELECT * FROM ',\n    item().source_schema,'.',item().table_name,\n    ' WHERE ',item().watermark_column,\n    ' > ',\n    string(activity('lkp_last_watermark').output.firstRow.last_watermark_value)\n  )\n)",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
