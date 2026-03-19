@@ -272,7 +272,7 @@
 										}
 									}
 								},
-								"firstRowOnly": false
+								"firstRowOnly": true
 							}
 						}
 					]
