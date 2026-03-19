@@ -52,8 +52,6 @@
 						{
 							"name": "copy_data_to_bronze",
 							"type": "Copy",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "lkp_last_watermark",
