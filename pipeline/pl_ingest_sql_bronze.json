@@ -180,7 +180,7 @@
 														"value": "@activity('lookup_max_watermark').output.firstRow.max_watermark",
 														"type": "Expression"
 													},
-													"type": "Datetime"
+													"type": "String"
 												}
 											}
 										},
