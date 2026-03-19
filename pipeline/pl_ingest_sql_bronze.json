@@ -19,7 +19,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "SELECT *\nFROM your_metadata_table\nWHERE active_flag = 1\nAND table_name = 'order_items'",
+						"sqlReaderQuery": "SELECT *\nFROM \nWHERE active_flag = 1\nAND table_name = 'order_items'",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
