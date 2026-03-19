@@ -52,6 +52,8 @@
 						{
 							"name": "copy_data_to_bronze",
 							"type": "Copy",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "lkp_last_watermark",
@@ -130,6 +132,8 @@
 						{
 							"name": "If Condition1",
 							"type": "IfCondition",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "copy_data_to_bronze",
